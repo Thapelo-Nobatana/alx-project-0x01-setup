@@ -7,9 +7,11 @@ export interface PostProps {
 
 export interface PostsPageProps {
   posts: PostProps[],
-  users: UserData[];
+  
 }
-
+export interface UserPageProps {
+    posts: UserData[];
+}
 
 export interface UserProps  {
   id: number;
@@ -71,7 +73,7 @@ export interface UserData  {
   };
 }
 
-export interface UserDataModalProps {
+export interface UserModalProps {
   onClose: () => void;
-  onSubmit: (user: UserData) => void;
+  onSubmit: (post: UserProps) => void;
 }
