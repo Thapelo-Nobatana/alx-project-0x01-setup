@@ -11,7 +11,7 @@ export interface PostsPageProps {
 }
 
 
-export interface UsersProps  {
+export interface UserProps  {
   id: number;
   name: string;
   username: string;
