@@ -1,7 +1,7 @@
 import React from "react"
 import  { UserProps } from "@/interfaces"
 
-const UsersCard: React.FC <UserProps> = ({id, name, username, email}) => {
+const UserCard: React.FC <UserProps> = ({id, name, username, email}) => {
     return (
         <div>
               <div className="max-w-xl mx-auto my-6 p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -30,4 +30,4 @@ export async function getStaticProps() {
 }
 
 
-export default UsersCard;
+export default UserCard;
